@@ -5573,6 +5573,20 @@ PERFORMANCE OF THIS SOFTWARE.
             if (!its_phoneBody && !its_phoneMenu && phoneBody_is_active) phoneBody.classList.remove("_active");
         }));
     }
+    const subMenu = document.querySelector(".submenu");
+    if (subMenu) {
+        const subMenuBody = document.querySelector(".submenu__body");
+        subMenu.addEventListener("click", (function(e) {
+            subMenuBody.classList.toggle("_active");
+        }));
+        document.addEventListener("click", (function(e) {
+            const target = e.target;
+            const its_subMenuBody = target == subMenuBody || subMenuBody.contains(target);
+            const its_subMenu = target == subMenu;
+            const subMenuBody_is_active = subMenuBody.classList.contains("_active");
+            if (!its_subMenuBody && !its_subMenu && subMenuBody_is_active) subMenuBody.classList.remove("_active");
+        }));
+    }
     window["FLS"] = true;
     menuInit();
 })();

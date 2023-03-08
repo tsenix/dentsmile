@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230307122144">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230308215240">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,20 @@
 
 				<nav class="header__menu">
 					<a href="index.html" class="header__menu-link">Головна</a>
-					<a href="service.html" class="header__menu-link">Послуги</a>
+
+					<div class="header__menu-link submenu">
+						Послуги
+
+						<div class="submenu__body">
+							<a href="service.html" class="submenu__link">Терапия</a>
+							<a href="service.html" class="submenu__link">Протезирование</a>
+							<a href="service.html" class="submenu__link">Хирургия и имплантация</a>
+							<a href="service.html" class="submenu__link">Детская стоматология</a>
+							<a href="service.html" class="submenu__link">Ортодонтия</a>
+							<a href="service.html" class="submenu__link">Стоматологический туризм</a>
+						</div>
+					</div>
+
 					<a href="price.html" class="header__menu-link">Прайс</a>
 					<a href="gallery.html" class="header__menu-link">Галерея</a>
 					<a href="#" class="header__menu-link">Dentysta</a>
@@ -78,7 +91,17 @@
 			<div class="menu__body">
 				<nav class="menu__menu">
 					<a href="index.html" class="menu__menu-link">Головна</a>
-					<a href="service.html" class="menu__menu-link">Послуги</a>
+					<div class="menu__menu-link">
+						Послуги:
+						<div class="menu__submenu">
+							<a href="service.html" class="menu__submenu-link">Терапия</a>
+							<a href="service.html" class="menu__submenu-link">Протезирование</a>
+							<a href="service.html" class="menu__submenu-link">Хирургия и имплантация</a>
+							<a href="service.html" class="menu__submenu-link">Детская стоматология</a>
+							<a href="service.html" class="menu__submenu-link">Ортодонтия</a>
+							<a href="service.html" class="menu__submenu-link">Стоматологический туризм</a>
+						</div>
+					</div>
 					<a href="price.html" class="menu__menu-link">Прайс</a>
 					<a href="gallery.html" class="menu__menu-link">Галерея</a>
 					<a href="#" class="menu__menu-link">Dentysta</a>
@@ -125,9 +148,9 @@
 				</div>
 			</div>
 
-			<section class="gallery">
+			<div class="gallery">
 				<div class="gallery__container _container">
-					<h1 class="gallery__title">Галерея</h1>
+					<div class="gallery__title">Галерея</div>
 					<div class="gallery__subtitle">Ми пропонуємо широкий спектр процедур, які <b>допоможутьВам отримати ідеальну посмішку.</b></div>
 					<div class="gallery__body" data-gallery>
 						<a href="img/gallery/image01.jpg" class="gallery__item">
@@ -210,7 +233,7 @@
 						<a href="tel:+380932629897" class="footer__phone">+38 093 262 98 97</a>
 					</div>
 				</div>
-			</section>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container _container">
@@ -266,7 +289,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230307122144"></script>
+	<script src="js/app.min.js?_v=20230308215240"></script>
 </body>
 
 </html>
